@@ -31,3 +31,66 @@
 // // your code
 
 // }
+
+// Implement a function likes :: [String] -> String, 
+// which must take in input array, containing the names of people who like an item.
+// It must return the display text as shown in the examples:
+// function likes(names) {
+//   let i = 0;
+//   const len = names.length;
+//   if(len == 0) {
+//     return 'no one likes this';
+//   }
+//   if (len == 1) {
+//     return `${names[i]} likes this`;
+//   }
+//   if (len == 2) {
+//     return `${names[i]} and ${names[i+1]} like this`;
+//   }
+//   if (len == 3){
+//     return `${names[i]}, ${names[i+1]} and ${names[i+2]} like this`
+//   }
+//   if (len >= 4){
+//     return `${names[i]}, ${names[i+1]} and ${len-2} others like this`
+//   }
+// }
+
+// likes [] -- must be "no one likes this"
+// likes ["Peter"] -- must be "Peter likes this"
+// likes ["Jacob", "Alex"] -- must be "Jacob and Alex like this"
+// likes ["Max", "John", "Mark"] -- must be "Max, John and Mark like this"
+// likes ["Alex", "Jacob", "Mark", "Max"] -- must be "Alex, Jacob and 2 others
+
+// Write a function that takes in a string of one or more words,
+//   and returns the same string, but with all five or more letter
+// words reversed(Just like the name of this Kata).
+// Strings passed in will consist of only letters and spaces.
+// Spaces will be included only when more than one word is present.
+
+// Examples:
+
+// spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw"
+
+// function spinWords(){
+
+//   const words = string.split(' ');
+
+//   let wordWithFive = words[];
+
+//   for (const word of words) {
+
+//     if(word.length >= 5){
+
+//       words.push(word);
+
+//     }
+
+//   }
+
+//   const spinned = words.reverse();
+
+//   //TODO Have fun :)
+
+//   return spinned;
+
+}
