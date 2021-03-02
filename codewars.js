@@ -383,6 +383,33 @@
 
 // }
 
+// In this kata you will create a function that takes
+// a list of non - negative integers and strings and returns a new list with the strings filtered out.
+
+// Example
+
+// filter_list([1, 2, 'a', 'b']) == [1, 2]
+// function filter_list(l) {
+
+//   const filtered = [];
+
+//   for (let i = 0; i < l.length; i++) {
+
+//     if (typeof(l[i]) == 'number'){
+
+//       filtered.push(l[i])
+
+//     }
+
+//   }
+
+  // Return a new array with the strings filtered out
+
+//   const filtered = l.filter(element => element == 'number')
+
+  //  return filtered;
+
+  // }
  
 
 
