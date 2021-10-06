@@ -642,11 +642,61 @@
 
 // "c".charCodeAt(0)-96
 
+// Write a function that takes a string of braces,
+//   and determines if the order of the braces is valid.
+//   It should return true if the string is valid, and false if it's invalid.
+
+// This Kata is similar to the Valid Parentheses Kata, but introduces new characters:
+// brackets[], and curly braces { }. Thanks to @arnedag for the idea!
+
+// All input strings will be nonempty, and will only consist of parentheses,
+//   brackets and curly braces: ()[]{ }.
+
+// What is considered Valid?
+// A string of braces is considered valid if all braces are matched with the correct brace.
+
  
+// function validBraces(braces){
+//   const arrayBraces = [["[", "]"], ["(", ")"], ["{", "}"]];
+//   let stack = [];
+//   function searchBraces(char) {
+//     let row = -1, column = -1;
+//     for (let i = 0; i<3; i++) 
+//       for (let j = 0; j<2; j++) {
+//         if (char == arrayBraces[i][j]) {
+//           row = i;
+//           column = j;
+//         }
+//       }
+//     return {
+//       row: row,
+//       column: column
+//     }
+//   }
+  
+//   for (let k = 0; k<braces.length; k++) {
+//     let indexesIn = searchBraces(braces[k])
+//     let indexesStack;
+//     if (indexesIn.row !== -1 && indexesIn.column !== -1)  {
+//       if (indexesIn.column == 0)  {//stack.length == 0 && k == 0 || 
+//         stack.push(braces[k])
+//       } else {
+//         indexesStack = searchBraces(stack[stack.length])
+//         if(indexesIn.row == indexesStack.row) {
+//           stack.pop()
+//         }
+//         else {
+//           return false
+//         }
+//       }
+      
+//     }
+//   }
+//   return true
+// }
+// console.log(validBraces("(){}[]")) 
 
-
-
-
+// console.log(validBraces("([{}])"))
  
 
  
